@@ -1,7 +1,15 @@
-import pypandoc
 from setuptools import setup
 
-long_description = pypandoc.convert('README.md', 'rst')
+try:
+    from pypandoc import convert
+
+    def read_md(f): return convert(f, 'rst')
+except ImportError:
+    print("warning: pypandoc module not found, could not convert Markdown to RST")
+
+    def read_md(f): return open(f, 'r').read()
+
+long_description = read_md('README.md')
 
 setup(
     name='django-plantains',
