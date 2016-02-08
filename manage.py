@@ -25,6 +25,7 @@ settings.configure(
         }
     },
     SITE_ID=1,
+    MIDDLEWARE_CLASSES=(), # Silences Django 1.7 warning (W001)
     INSTALLED_APPS=INSTALLED_APPS,
     ROOT_URLCONF="plantains.urls",
 )
