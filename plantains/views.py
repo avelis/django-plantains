@@ -63,6 +63,10 @@ class MailChimpAuthView(RedirectView):
         return self.complete(settings.MAILCHIMP_AUTHORIZATION_URL + '?' + params)
 
     def access_token_uri_request(self, code):
+        headers = {
+            'User-Agent': 'oauth2-draft-v10',
+            'Content-Type': 'application/x-www-form-urlencoded',
+        }
         params = {
             'client_id': settings.MAILCHIMP_CLIENT_ID,
             'client_secret': settings.MAILCHIMP_CLIENT_SECRET,
@@ -71,7 +75,7 @@ class MailChimpAuthView(RedirectView):
             'redirect_uri': self.request.build_absolute_uri(reverse('mailchimp_auth')),
         }
 
-        return requests.post(url=settings.MAILCHIMP_ACCESS_TOKEN_URL, params=params)
+        return requests.post(url=settings.MAILCHIMP_ACCESS_TOKEN_URL, data=params, headers=headers)
 
     def metadata_uri_request(self, access_token):
         return requests.get(url=settings.MAILCHIMP_METADATA_URL, headers=self.oauth_header(access_token))
