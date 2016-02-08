@@ -35,11 +35,18 @@ MAILCHIMP_CLIENT_SECRET = 'a1b2c3d4e5f6789'
 MAILCHIMP_SUCCESS_REDIRECT_URL = '/'
 
 
-# These are in case slack team decides
+# These are in case MailChimp decides
 # to change it's endpoints
 MAILCHIMP_AUTHORIZATION_URL = 'https://slack.com/oauth/authorize'
-MAILCHIMP_OAUTH_ACCESS_URL = 'https://slack.com/api/oauth.access'
+MAILCHIMP_ACCESS_TOKEN_URL = 'https://slack.com/api/oauth.access'
 ```
+
+Use the authentication url to begin the Oauth process in your Django templates.
+```html
+<a href="{% url 'mailchimp_auth' %}">Feelin Chimpy</a>
+```
+
+Once the authentication is complete you can find your access_token in the `mailchimp_user` table.
 
 ## How to Contribute
 Django-plantains is willing and open to accept all contributions. Take a fork and make a pull-request. If you feel like becoming an active maintainer, please get in touch in becoming a project contributor.
