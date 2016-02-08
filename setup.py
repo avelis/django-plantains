@@ -23,6 +23,7 @@ setup(
     license='BSD',
     packages=[
         'plantains',
+        'plantains.migrations',
     ],
     zip_safe=False,
     install_requires=[
