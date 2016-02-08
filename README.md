@@ -37,8 +37,8 @@ MAILCHIMP_SUCCESS_REDIRECT_URL = '/'
 
 # These are in case MailChimp decides
 # to change it's endpoints
-MAILCHIMP_AUTHORIZATION_URL = 'https://slack.com/oauth/authorize'
-MAILCHIMP_ACCESS_TOKEN_URL = 'https://slack.com/api/oauth.access'
+MAILCHIMP_AUTHORIZATION_URL = 'https://login.mailchimp.com/oauth2/authorize'
+MAILCHIMP_ACCESS_TOKEN_URL = 'https://login.mailchimp.com/oauth2/token'
 ```
 
 Use the authentication url to begin the Oauth process in your Django templates.

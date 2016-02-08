@@ -6,7 +6,7 @@ default_settings = {
     'MAILCHIMP_CLIENT_ID': None,
     'MAILCHIMP_CLIENT_SECRET': None,
 
-    'MAILCHIMP_AUTHORIZATION_URL': 'https://login.mailchimp.com/oauth/authorize',
+    'MAILCHIMP_AUTHORIZATION_URL': 'https://login.mailchimp.com/oauth2/authorize',
     'MAILCHIMP_ACCESS_TOKEN_URL': 'https://login.mailchimp.com/oauth2/token',
     'MAILCHIMP_METADATA_URL': 'https://login.mailchimp.com/oauth2/metadata',
     'MAILCHIMP_SUCCESS_REDIRECT_URL': '/',
