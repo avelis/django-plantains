@@ -29,6 +29,7 @@ Include the application URLconf in your project urls.py:
 url(r'^plantains/', include('plantains.urls')),
 ```
 
+Using a MailChimp registered app, set your client_id and client_secret in your `settings` configuration as well: 
 ```python
 MAILCHIMP_CLIENT_ID = '123456789'
 MAILCHIMP_CLIENT_SECRET = 'a1b2c3d4e5f6789'
