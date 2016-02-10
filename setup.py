@@ -41,6 +41,7 @@ setup(
         'Programming Language :: Python',
         'Programming Language :: Python :: 2.7',
         'Framework :: Django',
+        'Framework :: Django :: 1.8',
         "Topic :: Software Development :: Libraries :: Python Modules",
     ],
 )
