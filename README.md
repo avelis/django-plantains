@@ -2,6 +2,7 @@
 [![PyPI Python](https://img.shields.io/pypi/pyversions/django-plantains.svg)](https://pypi.python.org/pypi/django-plantains)
 [![PyPI Status](https://img.shields.io/pypi/status/django-plantains.svg)](https://pypi.python.org/pypi/django-plantains)
 [![PyPI License](https://img.shields.io/pypi/l/django-plantains.svg)](https://pypi.python.org/pypi/django-plantains)
+
 # Django Plantains
 
 Django plantains creates the ability to persist the association of a MailChimp account to an AuthUser account in Django. Leveraging the Django framework this can facitate authentication and persisted storage of Oauth metadata for later retrieval and usage.
