@@ -1,4 +1,5 @@
-[![PyPI Link](https://img.shields.io/pypi/v/django-plantains.svg)](https://pypi.python.org/pypi/django-plantains)
+[![PyPI Version](https://img.shields.io/pypi/v/django-plantains.svg)](https://pypi.python.org/pypi/django-plantains)
+[![PyPI Python](https://img.shields.io/pypi/pyversions/django-plantains.svg)](https://pypi.python.org/pypi/django-plantains)
 [![PyPI Status](https://img.shields.io/pypi/status/django-plantains.svg)](https://pypi.python.org/pypi/django-plantains)
 [![PyPI License](https://img.shields.io/pypi/l/django-plantains.svg)](https://pypi.python.org/pypi/django-plantains)
 # Django Plantains
