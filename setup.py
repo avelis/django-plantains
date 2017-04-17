@@ -13,7 +13,7 @@ long_description = read_md('README.md')
 
 setup(
     name='django-plantains',
-    version='0.1.1',
+    version='0.2',
     description='Persistable oauth2 Mailchimp backend for Django.',
     long_description=long_description,
     keywords='django, mailchimp, oauth2',
@@ -27,7 +27,7 @@ setup(
     ],
     zip_safe=False,
     install_requires=[
-        'Django>=1.8.1',
+        'Django>=1.10.1',
         'requests',
         'jsonfield==1.0.3',
     ],
